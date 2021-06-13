@@ -4,7 +4,7 @@ const util=require('../utils.js')
 const profil=require('../Storage/profil.json')
 const pdp=require('../Storage/Packs/onepiece.json')
 module.exports.run = async(client, message, args) => {
-    const random = util.math.random(0,322)
+    const random = util.math.random(0,320)
     const pfp = pdp[random]
     if(profil[message.author.id]){
         const embed = new MessageEmbed()
